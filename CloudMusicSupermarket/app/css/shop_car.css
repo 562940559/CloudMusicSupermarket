@@ -1,0 +1,430 @@
+#goto_top{
+	width: 62px;
+	height: 234px;
+	border: 1px solid rgba(0,0,0,.4);
+	position: absolute;
+	right: 70px;
+	top: 353px;
+}
+#goto_top .m-unclick{
+	width: 60px;
+	height: 60px;
+	font-size: 12px;
+	color: #333;
+	padding-top: 15px;
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+#goto_top .shop_car_logo{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #e5e5e5;
+}
+#goto_top .shop_car_logo a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/totop.png) no-repeat;
+	background-position: 0px -71px;
+	position: relative;
+	margin: 11px 0 5px 17px;
+}
+#goto_top .shop_car_logo a span{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	font-size: 10px;
+	background-color: red;
+	border-radius: 50%;
+	color: white;
+	text-align: center;
+	line-height: 10px;
+	left: 15px;
+	top: -4px;
+}
+#goto_top p{
+	text-align: center;
+	font-size: 10px;
+	color: #333;
+}
+#goto_top .help{
+	width: 60px;
+	height: 60px;
+	border: 1px solid #e5e5e5;
+}
+#goto_top .help a{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/totop.png) no-repeat;
+	background-position: 0 -101px;
+	margin: 11px 0 5px 19px;
+}
+#goto_top #btn_top{
+	width: 60px;
+	height: 35px;
+	background: url(../images/totop.png) no-repeat;
+	background-position: -70px 0px;
+	display: none;
+}
+#goto_top #btn_top a{
+	display: inline-block;
+	width: 60px;
+	height: 35px;
+}
+/*头部css*/
+header{
+	width: 100%;
+	height: 73px;
+	border-bottom: 1px solid #ededed;
+}
+header .header_contect{
+	margin: 0 auto;
+	width: 1280px;
+}
+header .header_contect h1{
+	float: left;
+	display: inline-block;
+	width: 290px;
+	height: 70px;
+}
+header .header_contect h1 .header_logo{
+	display: inline-block;
+	width: 290px;
+	height: 70px;
+	background: url(../images/index_top_logo.png) no-repeat;
+	background-position: 0px -48px;
+}
+header .search{
+	width: 300px;
+	height: 69px;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	margin-left: 340px;
+}
+header .search form{
+	width: 100%;
+	height: 40px;
+	background: url(../images/index_top_logo.png) no-repeat;
+}
+header .search form input{
+	color: #919191;
+	width: 80%;
+	height: 30px;
+	margin: 3px 0 0 30px;
+	border: 0;
+}
+header .shop_car_logo{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	margin-left: 100px;
+	position: relative;
+	top: 20px;
+}
+header .shop_car_logo a{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	background: url(../images/index_top_logo.png) no-repeat;
+	background-position: -110px -158px;
+	position: relative;
+}
+header .shop_car_logo a span{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	line-height: 20px;
+	left: 30px;
+}
+header .header_login{
+	display: inline;
+	position: relative;
+	margin-left: 50px;
+	top: 10px;
+}
+header .header_login p{
+	display: inline-block;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+}
+#select_login{
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: -50px;
+	width: 160px;
+	height: 195px;
+	border: 1px solid #ccc;
+	box-shadow: 10px 10px 5px #888888;
+	z-index: 999;
+	background-color: white;
+}
+#select_login li{
+	width: 160px;
+	height: 40px;
+	line-height: 30px;
+}
+#select_login li a{
+	display: inline-block;
+	padding-left: 25px;
+	height: 30px;
+	width: 160px;
+	color: #333333;
+	font-size: 12px;
+}
+#select_login li a:hover{
+	background-color: #919191;
+}
+#select_login li:nth-child(1) a em{
+	background: url(../images/phonelog.png) no-repeat;
+}
+#select_login li a em{
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+	position: relative;
+	top: 3px;
+	left: -5px;
+}
+#select_login li:nth-child(2) a em{
+	background: url(../images/logins.png) no-repeat;
+	background-position: -84px 0;
+}
+#select_login li:nth-child(3) a em{
+	background: url(../images/logins.png) no-repeat;
+	background-position: -112px 0;
+}
+#select_login li:nth-child(5) a em{
+	background: url(../images/netease.png) no-repeat;
+}
+#select_login li:nth-child(4) a em{
+	background: url(../images/sina.png) no-repeat;
+}
+
+
+
+
+.shop_car_list{
+	width: 1100px;
+	margin: 0 auto 50px auto;
+}
+.shop_car_list h1{
+	font-size: 16px;
+	height: 80px;
+	line-height: 80px;
+	width: 1100px;
+	border-bottom: 1px solid #333;
+}
+.shop_property{
+	height: 50px;
+	line-height: 50px;
+}
+.shop_property input{
+	margin-right: 20px;
+}
+.shop_property span{
+	display: inline-block;
+	color: #9e9e9e;
+}
+.shop_property span:nth-child(2){
+	color: #333;
+	width: 100px;
+}
+.shop_property span:nth-child(3){
+	width: 404px;
+}
+.shop_property span:nth-child(4){
+	width: 116px;
+	text-align: center;
+}
+.shop_property span:nth-child(5){
+	width: 108px;
+	text-align: center;
+	margin: 0 79px 0 42px;
+}
+.shop_property span:nth-child(6){
+	width: 110px;
+	text-align: center;
+}
+.m-shop_car{
+	border: 1px solid rgba(0,0,0,.4);
+}
+.m-shop_car-header{
+	height: 40px;
+	width: 100%;
+	min-height: 40px;
+	line-height: 40px;
+	color: #999;
+	background-color: #f4f4f4;
+}
+.m-shop_car-header p{
+	font-size: 12px;
+	width: 400px;
+	margin-left: 35px;
+}
+.m-shop_car-list{
+	height: 117px;
+	position: relative;
+	top: -10px;
+}
+.m-shop_car-list input{
+	position: relative;
+	top: -10px;
+}
+.m-shop_car-list img{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	margin-right: 35px;
+}
+.m-shop_car-list p{
+	display: inline-block;
+	font-size: 12px;
+	margin-right: 310px;
+}
+.m-shop_car-list p a{
+	color: #333;	
+}
+.m-shop_car-list p span{
+	color: #9e9e9e;
+}
+.m-shop_car-list p a:hover{
+	text-decoration: underline;
+}
+.m-shop_car-count{
+	display: inline-block;
+	border: 1px solid #9e9e9e;
+	margin: 0px 78px;
+}
+.m-shop_car-count a{
+	display: inline-block;
+	width: 34px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #9e9e9e;
+	font-size: 18px;
+}
+.m-shop_car-list>span:nth-of-type(2){
+	margin-left: 20px;
+	color: red;
+}
+.m-shop_car-count span{
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+.m-shop_car-list>a:last-child{
+	margin-left: 52px;
+	font-size: 12px;
+	color: #333;
+}
+
+
+
+/*编辑推荐*/
+.edit{
+	width: 100%;
+}
+.edit_wrap h2{
+	margin-bottom: 20px;
+}
+.edit .edit_wrap{
+	width: 1100px;
+	margin: 0 auto;
+}
+.edit_list{
+	width: 1100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.listOfShop{
+	height: 340px;
+	margin-bottom: 20px;
+}
+.listOfShop h4{
+	color: #d33a31;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+}
+.listOfShop h4 span{
+	color: #fe672e;
+}
+.listOfShop a img{
+	/*border: 1px solid rgba(250,0,255,0.2);*/
+	background-color: #f9f9f9;
+}
+.listOfShop>a,.listOfShop a img{
+	display: inline-block;
+	width: 263px;
+	height: 263px;
+}
+.listOfShop p{
+	width: 263px;
+	text-align: center;
+}
+.listOfShop p a{
+	color: #333;
+	font-size: 12px;
+}
+.listOfShop p a:hover{
+	text-decoration: underline;
+}
+
+
+footer{
+	width: 100%;
+	background-color: #f9f9f9;
+	margin-top: 50px;
+}
+footer .footer_wrap{
+	width: 1100px;
+	height: 100px;
+	margin: 0 auto;
+}
+footer .footer_wrap .left ul{
+	height: 12px;
+	width: 700px;
+	margin-top: 30px;
+	margin-left: 50px;
+	display: inline-block;
+}
+footer .footer_wrap .left ul li{
+	border-right: 2px solid #c9c9d5;
+	height: 16px;
+	line-height: 12px;
+	float: left;
+	padding-right: 10px;
+	padding-left:10px ;
+}
+footer .footer_wrap .left ul li a{
+	color: #999999;
+	font-size: 12px;
+}
+footer .footer_wrap .left a:hover{
+	text-decoration: underline;
+}
+footer .footer_wrap p{
+	color: #666666;
+	font-size: 12px;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+footer .footer_wrap p a{
+	color: #666;
+}

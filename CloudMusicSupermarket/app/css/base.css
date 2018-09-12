@@ -1,0 +1,5 @@
+h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,form,p,textarea,select,body{margin: 0px;}
+ol,ul,th,td,textarea,option{padding: 0px;}
+li{list-style: none;}
+a{text-decoration: none;}
+*{font-family: "微软雅黑";box-sizing: border-box;}

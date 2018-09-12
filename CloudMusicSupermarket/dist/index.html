@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html style="font-size:16px">
+<head>
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script type="text/javascript" src="/libs/require.js" data-main="/js/index.js"></script>
+</head>
+<body>
+<div id="box">hello gulp</div>
+<h1>title</h1>
+<p class="p"> wrvwe</p>
+<ul>
+	<li>
+		baidu
+	</li>
+</ul>
+<div id="content"></div>
+<script type="text/html" id="list">
+	<ul>
+		{{each data item index}}
+			<li>
+			{{each item value key}}		
+					<b>{{key}}</b>:<i>{{value}}</i>
+			{{ /each}}
+			</li>
+		{{ /each }}
+	</ul>
+</script>
+
+</body>
+</html>
