@@ -1,1 +1,1 @@
-"use strict";require(["config"],function(){require(["jquery","tab","toast","template","url"],function(e,t,n,i,r){e.get(r.url+"/api/v1/login.php",function(t){var n=i("list",{data:t});e("#content").html(n)},"json")})});
+"use strict";require(["config"],function(){require(["Broadcast","login_change","gotoTop"],function(o,n,i){o.lunbo(),n.bian(),i.GoTop(),window.onscroll=function(o){o=o||window.event,i.GoTopPosition1()}})});

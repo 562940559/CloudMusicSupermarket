@@ -1,18 +1,15 @@
 require.config({
 	baseUrl: "/",
-	paths: {
-		"jquery": "libs/jquery-1.12.4",
-		"tab": "module/tab",
-		"toast": "module/toast",
-		"template": "libs/template-web",
-		"url": "module/url"
+	paths:{
+		"jquery":"libs/jquery-1.12.4",
+		"Broadcast":"module/Broadcast",
+		"login_change":"module/login_change",
+		"gotoTop":"module/gotoTop",
+		"changeBig":"module/changeBig"
 	},
 	shim: {
-		toast:{
+		Broadcast:{
 			deps:["jquery"]
-		}/*,
-		tab:{
-			deps:["jquery","toast"]
-		}*/
+		}
 	}
-})
+});

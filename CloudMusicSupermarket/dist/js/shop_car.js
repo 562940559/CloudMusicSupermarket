@@ -1,0 +1,1 @@
+"use strict";require(["config"],function(){require(["Broadcast","login_change","gotoTop"],function(o,n,i){o.lunbo(),n.bian(),i.GoTop(),window.onscroll=function(o){o=o||window.event,i.GoTopPosition2()}})});

@@ -1,4 +1,4 @@
-window.onload = function(){
+/*window.onload = function(){
 	var login_btn = document.getElementById("login_btn");
 	var sel_login = document.getElementById("select_login");
 	login_btn.onmouseenter = function(){
@@ -82,3 +82,20 @@ var box = document.getElementById("box"),
 
 }
 			
+*/
+
+
+require(['config'],function(){
+	require(['Broadcast','login_change','gotoTop','changeBig'],function(Broadcast,Change,gotoTop,changeBig){
+		Broadcast.lunbo();
+		Change.bian();
+		gotoTop.GoTop();
+		window.onscroll = function(e){
+			e = e || window.event;
+			gotoTop.GoTopPosition2();
+		};
+		changeBig.BianBig();
+	})
+})
+
+

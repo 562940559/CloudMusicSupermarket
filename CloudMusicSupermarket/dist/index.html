@@ -1,32 +1,560 @@
 <!DOCTYPE html>
-<html style="font-size:16px">
+<html>
 <head>
+	<meta charset="utf-8" />
 	<title>首页</title>
-	<link rel="stylesheet" type="text/css" href="/css/index.css">
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/base.css" />
 	<script type="text/javascript" src="/libs/require.js" data-main="/js/index.js"></script>
 </head>
 <body>
-<div id="box">hello gulp</div>
-<h1>title</h1>
-<p class="p"> wrvwe</p>
-<ul>
-	<li>
-		baidu
-	</li>
-</ul>
-<div id="content"></div>
-<script type="text/html" id="list">
-	<ul>
-		{{each data item index}}
-			<li>
-			{{each item value key}}		
-					<b>{{key}}</b>:<i>{{value}}</i>
-			{{ /each}}
-			</li>
-		{{ /each }}
-	</ul>
-</script>
-
+	<!--header-->
+	<div id="goto_top">
+		<div class="m-unclick">100%<br />正品</div>
+		<div class="m-unclick">七天无理由退货</div>
+		<div class="shop_car_logo">
+			<a href="shop_car.html"><span>0</span></a>
+			<p>购物车</p>
+		</div>
+		<div class="help">
+			<a href="javascript:;"></a>
+			<p>客服</p>
+		</div>
+		<div id="btn_top"><a href="javascript:;"></a></div>
+	</div>
+	<header>
+		<div class="header_contect">
+			<!--header左侧的logo-->
+			<h1><a href="index.html" class="header_logo"></a></h1>
+			<!--header搜索框-->
+			<div class="search">
+				<form action="">
+					<input type="text" placeholder="耳机" />
+				</form>
+			</div>
+			<!--header购物车-->
+			<div class="shop_car_logo">
+				<a href="shop_car.html"><span>0</span></a>
+			</div>
+			<!--header登录-->
+			<div class="header_login">
+				<p id="login_btn">登录</p>
+				<ul id="select_login">
+					<li><a href="loginAndRegister.html"><em></em>手机号登录</a></li>
+					<li><a href="loginAndRegister.html"><em></em>微信登录</a></li>
+					<li><a href="loginAndRegister.html"><em></em>QQ登录</a></li>
+					<li><a href="loginAndRegister.html"><em></em>新浪微博登录</a></li>
+					<li><a href="loginAndRegister.html"><em></em>网易邮箱账号登录</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+		
+	<!--轮播图-->
+	<div id="banner">
+		<ul>
+	    	<li class="ac"><a href="javascript:;"><img src="images/banner_1.png" /></a></li>
+	    	<li><a href="javascript:;"><img src="images/banner_2.png" /></a></li>
+	    	<li><a href="javascript:;"><img src="images/banner_3.png" /></a></li>
+	    	<li><a href="javascript:;"><img src="images/banner_4.png" /></a></li>
+	    	<li><a href="javascript:;"><img src="images/banner_5.png" /></a></li>
+	    	<li><a href="javascript:;"><img src="images/banner_6.png" /></a></li>
+   		</ul>
+    	<ol>
+	    	<li class="ac"></li>
+	    	<li></li>
+	    	<li></li>
+	    	<li></li>
+	    	<li></li>
+	    	<li></li>
+    	</ol>
+	    <a href="javascript:;" id="goPrev">&laquo;</a>
+	    <a href="javascript:;" id="goNext">&raquo;</a>
+	</div>
+	
+	<!--四个分类选项-->
+	<div class="s_tab">
+		<ul>
+			<li><a href="shop_list.html" target="_self"><img src="images/index_icon_2.png" /><span>数码影音</span></a></li>
+			<li><a href="shop_list.html" target="_self"><img src="images/index_icon_1.png" /><span>IP周边</span></a></li>
+			<li><a href="shop_list.html" target="_self"><img src="images/index_icon_3.png" /><span>热销爆品</span></a></li>
+			<li><a href="shop_list.html" target="_self"><img src="images/index_icon_4.png" /><span>积分商城</span></a></li>
+		</ul>
+	</div>
+	<!--两个导航图-->
+	<div class="t_tab">
+		<div class="t_tab_wrap">
+			<a href="javascript:;"><img src="images/t_tab_1.png" /></a>
+			<a href="javascript:;"><img src="images/t_tab_2.png" /></a>
+		</div>
+	</div>
+	<!--编辑推荐购物列表-->
+	<div class="edit">
+		<div class="edit_wrap">
+			<h2>热门推荐</h2>
+			<div class="edit_list">
+				<div class="listOfShop">
+					<a href="shop_detailed.html"><img src="images/index_shop_list/list_1.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="shop_detailed.html">JBL T120A 立体声入耳式耳机 手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</a>
+					</p>
+					<h4>¥128</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="shop_detailed.html"><img src="images/index_shop_list/list_2.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="shop_detailed.html">【下单即赠茶叶礼盒】哆啦探索·哆啦A梦温暖玻璃杯</a>
+					</p>
+					<h4>¥59</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="shop_detailed.html"><img src="images/index_shop_list/list_3.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="shop_detailed.html">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥49<span> (黑胶VIP ¥47)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="shop_detailed.html"><img src="images/index_shop_list/list_4.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="shop_detailed.html">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥199</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="shop_detailed.html"><img src="images/index_shop_list/list_5.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="shop_detailed.html">JBL T120A 立体声入耳式耳机 手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</a>
+					</p>
+					<h4>¥169</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="shop_detailed.html"><img src="images/index_shop_list/list_6.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="shop_detailed.html">【下单即赠茶叶礼盒】哆啦探索·哆啦A梦温暖玻璃杯</a>
+					</p>
+					<h4>¥69</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="shop_detailed.html"><img src="images/index_shop_list/list_7.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="shop_detailed.html">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥129<span> (黑胶VIP ¥119)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="shop_detailed.html"><img src="images/index_shop_list/list_8.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="shop_detailed.html">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥79<span> (黑胶VIP ¥49)</span></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--数字专辑推荐-->
+	<div class="math_album">
+		<div class="math_album_wrap">
+			<a href="javascript:;">
+				<div class="math_album_cont">
+				<div class="math_album_txt">
+					<img src="images/digitalicon.png" />
+					<h1>数字专辑</h1>
+					<p>Taylor Swift全新专辑火热售卖中</p>
+					<p>立 即 购 买 ></p>
+				</div>
+				<div class="math_album_img">
+					<img src="images/ablum_1.jpg" />
+					<img src="images/ablum_2.jpg"/>
+					<i class="circle"></i>
+				</div>
+			</div>
+			</a>
+		</div>
+	</div>
+	<!--热门商品列表-->
+	<div class="edit">
+		<div class="edit_wrap">
+			<h2>热门商品</h2>
+			<div class="edit_list">
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_9.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">JBL T120A 立体声入耳式耳机 手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</a>
+					</p>
+					<h4>¥128</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_10.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【下单即赠茶叶礼盒】哆啦探索·哆啦A梦温暖玻璃杯</a>
+					</p>
+					<h4>¥59</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_11.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥49<span> (黑胶VIP ¥47)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_12.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥199</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_13.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">JBL T120A 立体声入耳式耳机 手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</a>
+					</p>
+					<h4>¥169</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_14.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【下单即赠茶叶礼盒】哆啦探索·哆啦A梦温暖玻璃杯</a>
+					</p>
+					<h4>¥69</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_15.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥129<span> (黑胶VIP ¥119)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_16.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥79<span> (黑胶VIP ¥49)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_17.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">JBL T120A 立体声入耳式耳机 手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</a>
+					</p>
+					<h4>¥128</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_18.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【下单即赠茶叶礼盒】哆啦探索·哆啦A梦温暖玻璃杯</a>
+					</p>
+					<h4>¥59</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_19.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥49<span> (黑胶VIP ¥47)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_20.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥199</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_21.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">JBL T120A 立体声入耳式耳机 手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</a>
+					</p>
+					<h4>¥169</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_22.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【下单即赠茶叶礼盒】哆啦探索·哆啦A梦温暖玻璃杯</a>
+					</p>
+					<h4>¥69</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_23.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥129<span> (黑胶VIP ¥119)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_24.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥79<span> (黑胶VIP ¥49)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_25.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥199</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_26.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">JBL T120A 立体声入耳式耳机 手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</a>
+					</p>
+					<h4>¥169</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_27.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【下单即赠茶叶礼盒】哆啦探索·哆啦A梦温暖玻璃杯</a>
+					</p>
+					<h4>¥69</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_28.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥129<span> (黑胶VIP ¥119)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_29.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥79<span> (黑胶VIP ¥49)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_30.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">JBL T120A 立体声入耳式耳机 手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</a>
+					</p>
+					<h4>¥128</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_31.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【下单即赠茶叶礼盒】哆啦探索·哆啦A梦温暖玻璃杯</a>
+					</p>
+					<h4>¥59</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_32.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥49<span> (黑胶VIP ¥47)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_33.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥199</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_34.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">JBL T120A 立体声入耳式耳机 手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</a>
+					</p>
+					<h4>¥169</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_35.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【下单即赠茶叶礼盒】哆啦探索·哆啦A梦温暖玻璃杯</a>
+					</p>
+					<h4>¥69</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_36.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥129<span> (黑胶VIP ¥119)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_37.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥79<span> (黑胶VIP ¥49)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_38.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥199</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_39.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">JBL T120A 立体声入耳式耳机 手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</a>
+					</p>
+					<h4>¥169</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_40.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【下单即赠茶叶礼盒】哆啦探索·哆啦A梦温暖玻璃杯</a>
+					</p>
+					<h4>¥69</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_41.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥129<span> (黑胶VIP ¥119)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_42.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥79<span> (黑胶VIP ¥49)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_43.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">JBL T120A 立体声入耳式耳机 手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</a>
+					</p>
+					<h4>¥128</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_44.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【下单即赠茶叶礼盒】哆啦探索·哆啦A梦温暖玻璃杯</a>
+					</p>
+					<h4>¥59</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_45.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥49<span> (黑胶VIP ¥47)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_46.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥199</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_47.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">JBL T120A 立体声入耳式耳机 手机音乐耳机 游戏耳机 耳机耳麦 带麦可通话</a>
+					</p>
+					<h4>¥169</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_48.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【下单即赠茶叶礼盒】哆啦探索·哆啦A梦温暖玻璃杯</a>
+					</p>
+					<h4>¥69</h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_49.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥129<span> (黑胶VIP ¥119)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_50.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥79<span> (黑胶VIP ¥49)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_1.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【现货直发，买即送杯盖】哆啦探索·哆啦A梦温暖马克杯</a>
+					</p>
+					<h4>¥129<span> (黑胶VIP ¥119)</span></h4>
+				</div>
+				<div class="listOfShop">
+					<a href="javascript:;"><img src="images/index_shop_list/list_5.jpg"/></a>
+					<p>
+						<span></span>
+						<a href="javascript:;">【网易云音乐专供款】漫步者W800X立体声头戴式蓝牙耳机</a>
+					</p>
+					<h4>¥79<span> (黑胶VIP ¥49)</span></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--底部-->
+	<footer>
+		<div class="footer_wrap">
+			<div class="left">
+				<ul>
+					<li><a href="javascript:;">关于网易</a></li>
+					<li><a href="javascript:;">客户服务</a></li>
+					<li><a href="javascript:;">服务条款</a></li>
+					<li><a href="javascript:;">网站导航</a></li>
+					<li><a href="javascript:;">意见反馈</a></li>
+				</ul>
+				<p>网易公司版权所有©1997-2018杭州乐读科技有限公司运营<a href=""> 浙网文[2015] 0415-135号</a></p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
